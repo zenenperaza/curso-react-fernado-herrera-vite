@@ -10,13 +10,14 @@
 
 import PropsTypes from 'prop-types'
 
-export const FirstApp = ({ title, subtitle }) => {     
+export const FirstApp = ({ title, subtitle, name }) => {     
     // console.log(props);  
     
         return (
             <>
             <h1>{ title }</h1>
             <h3>{ subtitle }</h3>
+            <h3>{ name }</h3>
             </>
         )
 }
@@ -24,4 +25,10 @@ export const FirstApp = ({ title, subtitle }) => {
 FirstApp.propTypes = {
     title: PropsTypes.string.isRequired,
     subtitle: PropsTypes.number.isRequired
+}
+
+FirstApp.defaultProps = {
+    title : 'No title',
+    subtitle : 'No subtitle',
+    name: 'Zenen Peraza'
 }
