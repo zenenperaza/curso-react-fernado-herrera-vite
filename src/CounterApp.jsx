@@ -8,10 +8,15 @@ export const CounterApp = ({ value}) => {
 
     const [ counter, setCounter ] = useState( value )
 
-    function handAdd(){
+    const handAdd = () => {
         // console.log(event);
         setCounter(counter + 1)
     }
+    
+    const handlerRem = () => setCounter(counter - 1)
+        
+    const reset = () => setCounter(value)
+    
 
     return (
             <>
@@ -20,6 +25,13 @@ export const CounterApp = ({ value}) => {
                 <button id='button' onClick={ handAdd }>
                     +1
                 </button>
+                <button onClick={ handlerRem }>
+                    -1 
+                </button>
+                <button onClick={ reset }>
+                    Reset
+                </button>
+
             </>
          )
 }
