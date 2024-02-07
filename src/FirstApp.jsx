@@ -28,7 +28,7 @@ FirstApp.propTypes = {
 }
 
 FirstApp.defaultProps = {
-    title : 'No title',
-    subtitle : 'No subtitle',
+            title : 'No title',
+    subtitle : 556,
     name: 'Zenen Peraza'
 }
